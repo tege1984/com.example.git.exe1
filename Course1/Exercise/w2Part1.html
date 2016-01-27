@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+     <title>Examples of week 2 part 1</title>
+
+     <script>
+     var target_index;
+     var guess_input;
+     var target;
+     var guesses = 0;
+     var finished = false;
+     var colors = ["aqua", "black", "cyan","blue","brown","coral","gold","green","indigo","lime"];
+
+     function do_game() {
+
+        colors.sort();
+        target_index = Math.random() * colors.length;
+        target_index=Math.floor(target_index);
+        target =colors[target_index];
+
+        //console.log(target_index);
+        //console.log(target);
+
+        while(!finished) {
+            guess_input = prompt("JavaScript" + "\n\n" +"I am thinking of one of these colors:" + "\n\n" +
+                                 colors.toString() + "\n\n" +
+                                 "What color am i thinking of?"
+                             );
+
+            guesses +=1;
+            if(guess_input == target)
+                finished = true;
+
+        }
+
+     }
+
+
+    </script>
+
+ </head>
+
+  <body onload="do_game()">
+       <h1> Guessing Game</h1>
+       <p>
+        The page is loading...
+       </p>
+  </body>
+
+</html>

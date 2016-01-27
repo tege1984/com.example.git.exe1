@@ -1,0 +1,15 @@
+h1:hover {color:red }
+a:link {color:red }
+a:visited {color:red}
+li:empty {background: black}
+a:active{color: black}
+p {color: blue}
+#first {color: red }
+#second {color: blue }
+#third {color: yellow }
+/*#div {color: green; position:absolute; top:0px; left:0px } */
+#div {color: green; position:relative; top:10px; left:10px }
+.wow {color: green; background: black}
+table, td,th {border: 1px solid black; padding: 15px}
+td {color: purple}
+#span {background-color: blue}

@@ -1,0 +1,34 @@
+<html>
+  <head>
+     <title>Test week 3</title>
+
+ </head>
+  <body id="theBody" >
+
+       <h2 style="color:black" id="cute_text">
+       <p onmouseover="change_color('red');" onmouseout="change_color('yellow');">
+         click on a button to change the color
+       </p>
+       </h2>
+
+       <form>
+         <input onclick="change_color1()" type="button" value ="Change using method 1">
+         <input onclick="change_color2()" type="button" value ="Change using method 2">
+         <input onclick="change_color3()" type="button" value ="Change using method 3">
+       </form>
+
+       <p>
+         <button onclick = "clearTimeout(int_timer)"> Stop int!  </button>
+         <button onclick = "clearTimeout(the_timer)"> Stop!  </button>
+         <button onclick = "clearInterval(the_timer_interval)"> Stop Interval! </button>
+       </p>
+
+       <p>
+         <img src="images.jpg" id="imgs" style="position:absolute; left:0">
+       </p>
+
+
+ <script src="main.js"></script>
+
+ </body>
+</html>
