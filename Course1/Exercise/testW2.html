@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+     <title> Examples of week 2 </title>
+
+     <script>
+
+        function disneyland()  {
+            if (confirm("Want to go Disneyland?"))
+                  document.location.href
+                 ="http://park.hongkongdisneyland.com";
+         }
+
+         function checkDataType(){
+           var user_name;
+           user_name = prompt("What is yout name?");
+           document.write("Wellcom to my page " + user_name + "!" );
+           alert( '"John" is type: ' + typeof "John" + "\n\n"
+                   + "3.14 is type: " + typeof 3.14 + "\n\n"
+                   + "false is type: " + typeof false);
+         }
+
+          function greet_the_user(){
+                alert('Hello!');
+                alert('We start soon..');
+                prompt('Excited?!');
+          }
+
+          function check_user_age() {
+              if(age_of_user() < 18)
+                alert("Please go to another page");
+          }
+
+          function age_of_user() {
+               var age_text, age;
+               age_text=prompt("What is your age");
+               age=parseInt(age_text);
+               console.log(age);
+               return age;
+          }
+
+          function build_great(depth) {
+             if(depth > 0) {
+               console.log('It is my ' + build_great(5) + ' grandmother!');
+               return "great"  + build_great(depth-1);
+             }
+             else
+               return "";
+          }
+
+         function js_decisions_example() {
+            var user_name;
+            user_name= prompt("what is your name");
+            if(user_name=="michael")
+              alert("great name");
+            else if(user_name=="michael haileyesus")
+              alert("rather great name");
+            else
+              alert("not great name");
+         }
+
+         function js_decisions_example_switch() {
+
+             var user_name;
+             user_name= prompt("what is your name");
+
+             switch (user_name) {
+              // case "m":
+               case "michael":
+                     alert("great name")
+                     break;
+              case "michael haileyesus":
+                     alert("rather great name")
+                     break;
+              default:
+                     alert("it is ok")
+
+             }
+          }
+
+          function indexOfText() {
+            var text= "The  cat's that was wet";
+            result = text.indexOf("at");
+            console.log(result);
+
+          }
+
+          function whileTest() {
+             var response, finnished;
+             finnished = false;
+             alert("Michael is a great name");
+             while (!finnished) {
+                response =prompt("Do you agree?");
+                if(response.indexOf("y")==0)
+                  finnished= true;
+            }
+          }
+
+         function show_money() {
+              var money = 2; // loclal variable
+              alert("In the function, the value is:" + money);
+         }
+
+         function localVariable() {
+           money = 99; // Global variable
+           alert("In the main part, the value is:" + money);
+           show_money();
+           alert("In the main part, the value is:" + money);
+        }
+
+        function logicalOperators (){
+
+           var you_are_rich = false;
+           var you_have_partner = false;
+           var you_have_flat = false;
+           var life_is_fantastic = you_are_rich && you_have_flat
+           && you_have_partner;
+           alert("life is fantastic is " + life_is_fantastic);
+           var life_is_good = you_are_rich || you_have_partner ||
+           you_have_flat ;
+           alert("life is good " + life_is_good);
+           you_are_rich = true;
+           life_is_fantastic = you_are_rich && you_have_partner
+           && you_have_partner;
+           alert("life is fantastic is now " + life_is_fantastic);
+           var life_is_good = you_are_rich || you_have_partner ||
+           you_have_flat ;
+           alert("life is good is now " + life_is_good);
+
+       }
+
+       function arrayTest() {
+         var pets = ["dog", "cat", "rabbit"];
+         pets.push("hamster");
+         pets.pop();
+         pets.unshift("hamster");
+         pets.shift();
+         var length = pets.length;
+         //pets.length = 0;
+         var prime = [1,3,5,7];
+         var result = pets.concat(prime);
+         console.log(pets + length + result);
+       }
+
+       function randomNumber () {
+
+          var random_number;
+          random_number = Math.random() * 100;
+          console.log(Math.floor(random_number));
+
+       }
+
+
+
+
+    </script>
+
+ </head>
+
+  <body onload="check_user_age()">
+       <h1> This is my naughty web page </h1>
+       <p>
+        The page is loading...
+       </p>
+  </body>
+
+</html>

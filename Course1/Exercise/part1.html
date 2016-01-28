@@ -1,0 +1,66 @@
+<html>
+  <head>
+     <title> Part1 </title>
+     <meta name= "author" content="Michael Haileyesus">
+   </head>
+  <body>
+
+  <form action=" http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend> Your Face </legend>
+      <label for="avatar"> Your image: </label>
+      <input type="file" id="avatar" name="avatar" required=""> <br>
+      <label for="preview"> Image preview: </label>
+    </fieldset>
+    <fieldset>
+      <legend> Your General Details </legend>
+      <label for="fullname"> Name: </label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your Full Name" required=""> <br>
+      <label for="gender"> Gender: </label>
+      <input type="radio" id="gender" name="gender" value="Male" required=""> Male
+      <input type="radio" id="gender" name="gender" value="Female" required=""> Female <br>
+      <label for="age"> Age: </label>
+      <input type="number" id="age" name="age" min="0"> <br>
+      <label for="birthdate"> Date of birth: </label>
+      <input type="date" id="birthdate" name="birthdate" >  <br>
+      <label for="favoritecolor"> Favorite color: </label>
+      <input type="color" id="favoritecolor" name="favoritecolor" > <br>
+      <label for="whichcountry"> Which country: </label>
+      <select id="whichcountry" name="whichcountry">
+         <option></option>
+         <option value="Finland"> Finland </option>
+         <option value="Germay"> Germay </option>
+         <option value="France"> France </option>
+         <option value="USA"> USA</option>
+         <option value="UK"> UK </option>
+       </select> <br>
+    </fieldset>
+
+    <fieldset>
+      <legend> Your Indicators</legend>
+      <label for="height"> Height: </label> Short
+      <input type="range" id="height" name="height"  step="5 "min="0" max="100" > Tall <br>
+      <label for="salary"> Salary: </label> Poor
+      <input type="range" id="salary" name="salary"  step="5" min="0" max="100" > Rich <br>
+    </fieldset>
+
+    <fieldset>
+      <legend> Your Contact Information</legend>
+      <label for="email"> Email: </label>
+      <input type="email" id="email" name="email"> <br>
+      <label for="phone"> Phone: </label>
+      <input type="tel" id="phone" name="phone"> <br>
+      <label for="address"> Address: </label>
+      <textarea rows="3" cols="20" name="address">
+      </textarea>  <br>
+      <label for="contactmethod"> Method to contact you: </label>
+      <input type="checkbox" name="contactmethod" value="email"> Eamail
+      <input type="checkbox" name="contactmethod" value="whatsapp"> Whatsup
+      <input type="checkbox" name="contactmethod" value="in-app chat"> In-app chat <br>
+
+    </fieldset>
+    <input type="submit" value ="Submit">
+  </form>
+
+  </body>
+</html>
