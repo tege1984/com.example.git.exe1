@@ -1,17 +1,16 @@
 'use strict';
 
+
+module.exports = function (grunt) {
 // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt);
 
-module.exports = function (grunt) {
-
   // Define the configuration for all the tasks
   grunt.initConfig({
-
-    pkg: grunt.file.readJSON('package.json'),
+          pkg: grunt.file.readJSON('package.json'),
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
@@ -33,7 +32,7 @@ module.exports = function (grunt) {
     'jshint'
   ]);
 
+  grunt.registerTask('default',['build']);
 
-   grunt.registerTask('default',['build']);
 
-};
+  };
